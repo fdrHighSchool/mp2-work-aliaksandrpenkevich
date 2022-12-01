@@ -1,0 +1,27 @@
+class Main {
+  public static void main(String[] args) {
+    int num = 100;
+    System.out.println (LetterGrade(num));
+  }
+  public static String LetterGrade (int gpa){   
+    if(gpa >=90 && gpa <101){
+    return"Your grade is A";
+    }
+    else if(gpa >= 80 && gpa < 90){ 
+    return "Your grade is B";
+    }
+    else if(gpa >= 70 && gpa < 80){
+    return "Your grade is C";
+    }
+    else if(gpa >= 60 && gpa <= 70){
+    return "Your grade is D";
+    }
+    else if(gpa < 60){
+    return "Your grade is F";
+    }
+    else if(gpa > 100){
+    return "Wrong number!";
+    }
+    return null;
+  }
+}
