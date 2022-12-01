@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main{
+  public static void main(String[] args){
+    // create Scanner object
+    Scanner s = new Scanner(System.in);
+    // get String input from user
+    System.out.println("What is your number from 1 to 99"); 
+     int number = s.nextInt();
+    s.close();
+    
+     if(number % 5 == 0 && number % 3 == 0){
+    System.out.println("FizzBuzz");
+    }
+    else if (number % 3 == 0 && number % 5 != 0) {
+    System.out.println("Fizz");
+    }
+    else if(number % 5 == 0 && number % 3 != 0) {
+    System.out.println("Buzz");
+    }
+    else {
+    System.out.println("Number is displayed: " + number);
+    } 
+ }
+}
