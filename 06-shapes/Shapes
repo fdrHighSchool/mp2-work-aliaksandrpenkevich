@@ -1,0 +1,35 @@
+class Main {
+  public static void main(String[] args) {
+  sentence(2, 3);
+  pyramid(5);
+  righttriangle(5);
+  }
+  public static void sentence(int l, int w){
+    for(int row=0; row<w; row++){
+      for(int col=0; col<l; col++){
+        System.out.print("* ");
+    }
+       System.out.println();
+   }
+  }
+  public static void pyramid(int s) {
+  for (int r=1; r<=s; r++){
+      for (int c=1; c <=s - r; c++){
+        System.out.print(" ");
+      }
+      for (int c = 1; c <= 2 * r - 1; c++){
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+  }
+  public static void righttriangle(int s2) {
+  for (int i=1; i<=s2; i++){
+      for (int j=1; j <=10 - s2; j++){
+        System.out.print(""); 
+      }
+      for (int j = 1; j <= 2 * i - 1; j++){
+        System.out.print("*"); 
+      }
+      System.out.println(); 
+    }
